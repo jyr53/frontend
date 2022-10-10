@@ -53,7 +53,6 @@ export default {
         responseType: 'code',
         endpoints: {
           token: 'http://localhost:8765/api/tcia/users/verifgoogle/',
-          // userInfo: 'http://localhost:8765/api/tcia/users/getuser/'
           userInfo: 'https://www.googleapis.com/oauth2/v3/userinfo'
         }
       }
