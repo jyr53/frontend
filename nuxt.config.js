@@ -51,8 +51,9 @@ export default {
         clientId: '301673015379-s3mf2m909ehc8qsjiqtt2omaj36hnsd3.apps.googleusercontent.com',
         codeChallengeMethod: '',
         responseType: 'code',
+        scope: ['https://mail.google.com/'],
         endpoints: {
-          token: 'http://localhost:8765/api/tcia/users/verifgoogle/',
+          token: 'http://localhost:8765/api/tcia/usergoogles/verifgoogle/',
           userInfo: 'https://www.googleapis.com/oauth2/v3/userinfo'
         }
       }
