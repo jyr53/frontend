@@ -1,19 +1,21 @@
 module.exports = {
-  root: true,
-  env: {
-    browser: true,
-    node: true
+  "env": {
+    "browser": true,
+    "es2021": true
   },
-  parserOptions: {
-    parser: '@babel/eslint-parser',
-    requireConfigFile: false
+  "extends": "plugin:vue/essential",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   },
-  extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
+  "plugins": [
+    "vue"
   ],
-  plugins: [
-  ],
-  // add your custom rules here
-  rules: {}
+  "rules": {
+    'vue/multi-word-component-names': 'off',
+    'no-unused-vars': 'off',
+    'no-undef': 'off',
+    // 'no-console': 'off',
+    'prefer-const': 'off',
+  },
 }

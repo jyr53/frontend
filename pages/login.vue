@@ -7,11 +7,24 @@
 </template>
 
 <script>
+
 export default {
+  name: 'login',
+
+
   methods: {
-    loginWithGoogle () {
+    googlelogin() {
       this.$auth.loginWith('google')
-    }
-  }
+    },
+  },
 }
 </script>
+<style>
+.centreTitre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+</style>
