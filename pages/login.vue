@@ -1,8 +1,11 @@
 <template>
   <section class="section">
-    <b-button icon-left="google" @click="loginWithGoogle()">
-      Sign in with Google
-    </b-button>
+    <div class="connection">
+      <p>connexion avec google</p>
+      <b-button class="centreTitre" icon-left="google" @click="googlelogin()">
+        connexion
+      </b-button>
+    </div>
   </section>
 </template>
 
@@ -24,7 +27,28 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20px;
-  border-radius: 20px;
+  padding: 10px ;
+  border-radius: 10px;
+  background-color: rgb(67, 72, 146);
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
+.connection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+width: 30wh;
+}
+.connection p{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.section{
+  width: 30wh;
+  align-items: center;
+ 
+  margin: 80px 0px 80px 0px;
+}
+
 </style>
